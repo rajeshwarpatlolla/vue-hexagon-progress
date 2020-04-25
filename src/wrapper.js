@@ -1,11 +1,11 @@
 // Import vue component
-import component from './my-component.vue';
+import VueHexagon from './vue-hexagon.vue';
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
 	if (install.installed) return;
 	install.installed = true;
-	Vue.component('MyComponent', component);
+	Vue.component('VueHexagon', VueHexagon);
 }
 
 // Create module definition for Vue.use()
@@ -24,5 +24,5 @@ if (GlobalVue) {
 	GlobalVue.use(plugin);
 }
 
-// To allow use as module (npm/webpack/etc.) export component
-export default component;
+// To allow use as module (npm/webpack/etc.) export VueHexagon
+export default VueHexagon;
