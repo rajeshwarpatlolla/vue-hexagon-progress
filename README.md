@@ -1,14 +1,15 @@
 # vue-hexagon
 
-### How to user
+### How to use
 
 - npm install vue-hexagon
 
 - In main.js add the below two lines of code
 
-`import VueHexagon from 'vue-hexagon';`
-
-`Vue.use(VueHexagon);`
+````
+import VueHexagon from 'vue-hexagon';
+Vue.use(VueHexagon);
+````
 
 - In any component where you would like to use vue hexagon, you can create an options object with the below fields
 

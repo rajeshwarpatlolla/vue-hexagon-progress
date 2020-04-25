@@ -13,6 +13,18 @@
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-hexagon.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-hexagon.min.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajeshwarpatlolla/vue-hexagon"
+  },
+  "keywords": [
+    "vue",
+    "hexagon",
+    "vue-hexagon",
+    "js"
+  ],
+  "author": "Rajeshwar Patlolla",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",
     "@rollup/plugin-commonjs": "^11.1.0",
