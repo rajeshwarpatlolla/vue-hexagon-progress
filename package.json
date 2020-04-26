@@ -41,5 +41,6 @@
     "rollup-plugin-vue": "^5.1.6",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "dependencies": {}
 }

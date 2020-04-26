@@ -1,14 +1,14 @@
-# vue-hexagon
+# vue-hexagon-progress
 
 A progress component using Hexagon for vue.js applications
 
-![npm](https://img.shields.io/npm/v/vue-hexagon?color=brightgreen&style=plastic) ![MIT](https://img.shields.io/npm/l/vue-hexagon?color=brightgreen&style=plastic)
+![npm](https://img.shields.io/npm/v/vue-hexagon-progress?color=brightgreen&style=plastic) ![MIT](https://img.shields.io/npm/l/vue-hexagon-progress?color=brightgreen&style=plastic)
 
 ![screenshot.png](src/screenshot.png)
 -----
 
 ## Demo
-[You can see the demo here](https://rajeshwarpatlolla.github.io/vue-hexagon-demo/)
+[You can see the demo here](https://rajeshwarpatlolla.github.io/vue-hexagon-progress-demo/)
 
 ## How to use
 
@@ -71,10 +71,10 @@ const options = {
 
 
 ## License
-[MIT](https://github.com/rajeshwarpatlolla/vue-hexagon/blob/master/LICENSE.md)
+[MIT](https://github.com/rajeshwarpatlolla/vue-hexagon-progress/blob/master/LICENSE.md)
 
 ## Contact
-Gmail : rajeshwar.patlolla@gmail.com
-Github : https://github.com/rajeshwarpatlolla
-Twitter : https://twitter.com/rajeshwar_9032
-Facebook : https://www.facebook.com/rajeshwarpatlolla
+- Gmail : rajeshwar.patlolla@gmail.com
+- Github : https://github.com/rajeshwarpatlolla
+- Twitter : https://twitter.com/rajeshwar_9032
+- Facebook : https://www.facebook.com/rajeshwarpatlolla

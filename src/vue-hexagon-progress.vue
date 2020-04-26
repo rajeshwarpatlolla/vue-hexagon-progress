@@ -31,18 +31,18 @@ export default {
     },
   },
   mounted() {
-    this.renderHexagonGraph();
+    this.renderHexagonProgress();
   },
   watch: {
     options: {
       handler() {
-        this.renderHexagonGraph();
+        this.renderHexagonProgress();
       },
       deep: true,
     },
   },
   methods: {
-    renderHexagonGraph() {
+    renderHexagonProgress() {
       const max = 2160;
       this.getGraphCall(document.querySelectorAll(`.${this.options.className}`), (index, value) => {
         value
