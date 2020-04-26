@@ -1,13 +1,24 @@
 # vue-hexagon
 
+![npm](https://img.shields.io/npm/v/vue-hexagon?color=brightgreen&style=plastic) ![MIT](https://img.shields.io/npm/l/vue-hexagon?color=brightgreen&style=plastic)
+
+A Hexagon component for vue.js applications
+
+![screenshot.png](src/screenshot.png)
+-----
+
 ### How to use
 
+#### Installation
 - npm install vue-hexagon
 
 - In main.js add the below two lines of code
 
+#### Usage
 ````
+import Vue from 'vue';
 import VueHexagon from 'vue-hexagon';
+
 Vue.use(VueHexagon);
 ````
 
@@ -49,3 +60,8 @@ const options = {
   fontSize: 120,
 }
 ````
+
+
+
+
+https://www.telerik.com/blogs/vuejs-how-to-build-your-first-package-publish-it-on-npm

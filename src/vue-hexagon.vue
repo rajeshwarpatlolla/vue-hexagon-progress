@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'hexagon-graph',
+  name: 'vue-hexagon',
   data() {
     return {};
   },
