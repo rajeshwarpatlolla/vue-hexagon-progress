@@ -11,9 +11,6 @@
 <script>
 export default {
   name: 'vue-hexagon',
-  data() {
-    return {};
-  },
   props: {
     options: {
       type: Object,
@@ -35,6 +32,14 @@ export default {
   },
   mounted() {
     this.renderHexagonGraph();
+  },
+  watch: {
+    options: {
+      handler() {
+        this.renderHexagonGraph();
+      },
+      deep: true,
+    },
   },
   methods: {
     renderHexagonGraph() {
@@ -92,6 +97,5 @@ svg .fill {
 }
 svg .label {
   text-anchor: middle;
-  font-size: 160px;
 }
 </style>

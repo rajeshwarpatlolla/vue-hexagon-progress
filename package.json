@@ -1,18 +1,23 @@
 {
   "name": "vue-hexagon",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "main": "dist/vue-hexagon.umd.js",
   "module": "dist/vue-hexagon.esm.js",
   "unpkg": "dist/vue-hexagon.min.js",
+  "scripts": {
+    "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
+    "build:umd": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format umd --file dist/vue-hexagon.umd.js",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es --file dist/vue-hexagon.esm.js",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife --file dist/vue-hexagon.min.js"
+  },
   "browser": {
     "./sfc": "src/vue-hexagon.vue"
   },
-  "scripts": {
-    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-hexagon.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-hexagon.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-hexagon.min.js"
-  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "LICENSE.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/rajeshwarpatlolla/vue-hexagon"
@@ -26,11 +31,15 @@
   "author": "Rajeshwar Patlolla",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-buble": "^0.21.3",
-    "@rollup/plugin-commonjs": "^11.1.0",
+    "cross-env": "^7.0.2",
+    "minimist": "^1.2.5",
     "rollup": "^2.7.2",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-uglify-es": "0.0.1",
     "rollup-plugin-vue": "^5.1.6",
-    "vue": "^2.6.10",
+    "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   }
 }
