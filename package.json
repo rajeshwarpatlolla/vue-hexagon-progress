@@ -1,17 +1,17 @@
 {
-  "name": "vue-hexagon",
-  "version": "0.0.5",
-  "main": "dist/vue-hexagon.umd.js",
-  "module": "dist/vue-hexagon.esm.js",
-  "unpkg": "dist/vue-hexagon.min.js",
+  "name": "vue-hexagon-progress",
+  "version": "0.0.6",
+  "main": "dist/vue-hexagon-progress.umd.js",
+  "module": "dist/vue-hexagon-progress.esm.js",
+  "unpkg": "dist/vue-hexagon-progress.min.js",
   "scripts": {
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
-    "build:umd": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format umd --file dist/vue-hexagon.umd.js",
-    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es --file dist/vue-hexagon.esm.js",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife --file dist/vue-hexagon.min.js"
+    "build:umd": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format umd --file dist/vue-hexagon-progress.umd.js",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es --file dist/vue-hexagon-progress.esm.js",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife --file dist/vue-hexagon-progress.min.js"
   },
   "browser": {
-    "./sfc": "src/vue-hexagon.vue"
+    "./sfc": "src/vue-hexagon-progress.vue"
   },
   "files": [
     "dist/*",
@@ -20,12 +20,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rajeshwarpatlolla/vue-hexagon"
+    "url": "https://github.com/rajeshwarpatlolla/vue-hexagon-progress"
   },
   "keywords": [
     "vue",
     "hexagon",
-    "vue-hexagon",
+    "vue-hexagon-progress",
     "js"
   ],
   "author": "Rajeshwar Patlolla",

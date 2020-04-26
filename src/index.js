@@ -1,9 +1,9 @@
-import VueHexagon from "./vue-hexagon.vue";
+import VueHexagonProgress from "./vue-hexagon-progress.vue";
 
 function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component("VueHexagon", VueHexagon);
+  Vue.component("VueHexagonProgress", VueHexagonProgress);
 }
 
 const plugin = {
@@ -21,6 +21,6 @@ if (GlobalVue) {
   GlobalVue.use(plugin);
 }
 
-VueHexagon.install = install;
+VueHexagonProgress.install = install;
 
-export default VueHexagon;
+export default VueHexagonProgress;
