@@ -7,7 +7,7 @@ A Hexagon component for vue.js applications
 ![screenshot.png](src/screenshot.png)
 -----
 
-### How to use
+## How to use
 
 #### Installation
 - npm install vue-hexagon
@@ -64,4 +64,4 @@ const options = {
 
 
 
-https://www.telerik.com/blogs/vuejs-how-to-build-your-first-package-publish-it-on-npm
+<!-- https://www.telerik.com/blogs/vuejs-how-to-build-your-first-package-publish-it-on-npm -->
